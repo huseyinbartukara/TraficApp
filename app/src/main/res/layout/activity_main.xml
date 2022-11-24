@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F5D5E"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textViewMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/patrickhand"
+        android:text="Trafic App"
+        android:textColor="#CCE1F4"
+        android:textSize="70sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/quizButton"
+        android:layout_width="163dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="156dp"
+        android:background="@drawable/round_back_white10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/resim_trafic"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubikfont"
+            android:text="Quiz"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/plakaButton"
+        android:layout_width="163dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_back_white10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/quizButton">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/resim_car"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubikfont"
+            android:text="Plaka"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/yakitHesapButton"
+        android:layout_width="163dp"
+        android:layout_height="174dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/round_back_white10"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/plakaButton">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/resim_gas"></ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/rubikfont"
+            android:text="Yakıt"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textViewQuizDetay"
+        android:layout_width="187dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/patrickhand"
+        android:text="Quiz sayesinde trafik levhaları üzerinde ki bilgini test etmek ister misin ?"
+        android:textAlignment="center"
+        android:textColor="#CCE1F4"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/quizButton"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMain" />
+
+
+    <TextView
+        android:id="@+id/textViewPlakaDetay"
+        android:layout_width="187dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/patrickhand"
+        android:text="81 ilin plakasına tek tuş ile ulaşmak ister misin ?"
+        android:textAlignment="center"
+        android:textColor="#CCE1F4"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/plakaButton"
+        app:layout_constraintTop_toBottomOf="@+id/textViewQuizDetay" />
+
+
+    <TextView
+        android:id="@+id/textViewYakitDetay"
+        android:layout_width="187dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="15dp"
+        android:fontFamily="@font/patrickhand"
+        android:text="Gitmek istediğin yere aracın ne kadar yakar hiç merak ettin mi ?"
+        android:textAlignment="center"
+        android:textColor="#CCE1F4"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/yakitHesapButton"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPlakaDetay" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
